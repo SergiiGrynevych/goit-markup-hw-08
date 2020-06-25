@@ -684,10 +684,9 @@ textarea, input {
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 0px;
-  height: 75px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) {
   .advantages-description {
     text-align: left;
     width: 450px;
@@ -697,6 +696,13 @@ textarea, input {
 @media screen and (min-width: 768px) {
   .advantages-description {
     width: 354px;
+    height: 75px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .advantages-description {
+    margin-bottom: 30px;
   }
 }
 
@@ -707,13 +713,6 @@ textarea, input {
 }
 
 @media screen and (min-width: 768px) {
-  .advantages-element, .benefit-item {
-    margin-right: 30px;
-    text-align: left;
-  }
-}
-
-@media screen and (min-width: 1170px) {
   .advantages-element, .benefit-item {
     margin-right: 30px;
     text-align: left;
@@ -734,6 +733,24 @@ textarea, input {
 
 .advantages-element:last-child, .benefit-item:last-child {
   margin-right: 0px;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-element:last-child > .advantages-description, .benefit-item:last-child > .advantages-description {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-element:nth-child(n + 3) > .advantages-description, .benefit-item:nth-child(n + 3) > .advantages-description {
+    margin-bottom: 0px;
+  }
+}
+
+@media screen and (max-width: 1169px) {
+  .advantages-element:nth-child(n + 3) > .advantages-description, .benefit-item:nth-child(n + 3) > .advantages-description {
+    height: 50px;
+  }
 }
 
 .benefit-item {
