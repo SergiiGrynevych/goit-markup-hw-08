@@ -33,10 +33,27 @@ img {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   /* outline: 2px solid tomato; */
+}
+
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 a {
@@ -48,7 +65,7 @@ li {
   /* Убираем маркеры */
 }
 
-h2, .advantages {
+h2 {
   text-align: center;
 }
 
@@ -220,8 +237,6 @@ span.last-name.footer {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
@@ -229,24 +244,70 @@ span.last-name.footer {
   background-image: linear-gradient(rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url(../images/Hero.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  max-width: 1600px;
-  height: 600px;
+}
+
+@media screen and (min-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+    max-width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+    height: 400px;
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    height: 600px;
+    max-width: 1600px;
+  }
 }
 
 .hero .title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
-  width: 646px;
   -ms-flex-line-pack: center;
       align-content: center;
   color: #FFFFFF;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+
+@media screen and (min-width: 480px) {
+  .hero .title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero .title {
+    width: 360px;
+    font-size: 26px;
+    line-height: 1.62;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .hero .title {
+    width: 696px;
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 .hero .link {
@@ -525,15 +586,38 @@ textarea, input {
 .advantages {
   padding: 0;
   margin: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding-top: 94px;
-  padding-bottom: 94px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  text-align: center;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .advantages {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .advantages-background {
@@ -541,7 +625,6 @@ textarea, input {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: #F5F4FA;
   border-radius: 4px;
@@ -551,6 +634,24 @@ textarea, input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media screen and (min-width: 480px) {
+  .advantages-background {
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-background {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .advantages-background {
+    width: 270px;
+  }
 }
 
 .advantages-sprite {
@@ -571,20 +672,64 @@ textarea, input {
   height: 16px;
 }
 
+@media screen and (min-width: 480px) {
+  .advantages-title {
+    text-align: center;
+  }
+}
+
 .advantages-description {
   margin: 0;
   color: #757575;
-  max-width: 270px;
   font-size: 14px;
   line-height: 1.7;
   margin-bottom: 0px;
   height: 75px;
 }
 
-.advantages-element, .benefit-item {
-  text-align: left;
-  /* padding: 0; */
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .advantages-description {
+    text-align: left;
+    width: 450px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-description {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .advantages-description {
+    width: 270px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-element, .benefit-item {
+    margin-right: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .advantages-element, .benefit-item {
+    margin-right: 30px;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .advantages-element:nth-child(2n), .benefit-item:nth-child(2n) {
+    margin-right: 0px;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .advantages-element:nth-child(2n), .benefit-item:nth-child(2n) {
+    margin-right: 30px;
+  }
 }
 
 .advantages-element:last-child, .benefit-item:last-child {
@@ -606,6 +751,12 @@ textarea, input {
   padding-bottom: 94px;
   border-top: 1px solid #ECECEC;
   /* margin-bottom: 94px; */
+}
+
+@media screen and (min-width: 480px) {
+  .employment-section {
+    display: none;
+  }
 }
 
 .title-section {
