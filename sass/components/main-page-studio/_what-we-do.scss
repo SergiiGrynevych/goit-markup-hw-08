@@ -1,0 +1,62 @@
+.employment{
+    padding-top: 94px;
+    padding-bottom: 94px;
+    margin-bottom: 94px;
+    
+    &-section{
+        padding-top: 94px;
+        padding-bottom: 94px;
+        border-top: 1px solid $header-line-color;
+        /* margin-bottom: 94px; */
+    }
+}
+
+.title-section{
+    margin: 0;
+    margin-bottom: 50px;
+    margin-left: auto;
+    margin-right: auto;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.benefit{
+    display: flex;
+    padding: 0;
+    margin: 0;
+
+    &-item{
+        & img{
+            display: block;
+            margin-bottom: 0px;
+            /* min-width: auto; */
+            border-radius: 4px;
+            height: 294px;
+        }
+        
+        & .capabilities{
+            padding: 0;
+            margin: 0;
+            position: absolute;
+            bottom: 0;
+            display: block;
+            padding: 27px 80px;
+            
+            width: 370px;
+            color: $third-text-color;
+            font-weight: 700;
+            font-size: 14px;
+            line-height: 1.14;
+            height: 70px;
+            text-align: center;
+            text-transform: uppercase;
+            background-color: $benefit-capabilities-color;
+            border-radius: 0px 0px 4px 4px; 
+            /* letter-spacing: 0.03em; */
+        }
+    }
+}
+

@@ -1,0 +1,80 @@
+body{
+    color: $primary-text-color;
+    background-color: $third-text-color;
+    font-family: $main-font;
+    letter-spacing: 0.03em;
+    font-style: normal;
+    font-weight: 400;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.logo{
+    padding: 0;
+    margin: 0;
+}
+
+.join{
+    @extend .logo;
+}
+
+.team{
+    p{
+        @extend .logo;
+    }
+}
+
+.team {
+    .title{
+        @extend .logo;
+    }
+}
+
+.contacts{
+    & > p{
+        @extend .logo;
+    }
+}
+
+.container {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    /* outline: 2px solid tomato; */
+}
+  
+a{
+    text-decoration: none;
+}
+
+li {
+    list-style-type: none; /* Убираем маркеры */
+}
+
+h2, .advantages{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}

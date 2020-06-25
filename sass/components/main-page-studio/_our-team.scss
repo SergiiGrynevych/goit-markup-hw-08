@@ -1,0 +1,104 @@
+.team{
+    background-color: $resources-portfolio-color;
+
+    &-flex{
+        margin: 0;
+        padding: 0;
+        display: flex;
+
+        & .title{
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 1.19;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        &-photo{
+            margin-bottom: 30px;
+            display: block;
+            height: 260px;
+        }
+    }
+}
+
+.employment-team{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.team-flex-item{
+    width: calc((100% - 90px) / 4);
+    margin-right: 30px;
+
+    background-color: $third-text-color;
+    box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
+    border-radius: 4px;
+    padding-bottom: 24px;
+
+    overflow: hidden;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+
+    & p{
+        color: $secondary-text-color;
+        font-size: 16px;
+        line-height: 1.19;
+        text-align: center;
+        margin-bottom: 16px;
+    }
+}
+
+// Наша команда в соц.сетях
+
+.social-links {
+    display: flex;
+    margin-right: auto;
+    margin-left: auto;
+    width: 206px;
+    height: 44px;
+    padding: 0;
+}
+  
+.social-links .link {
+    display: flex;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    transition: background-color $transition;
+
+    &:hover > .link-icon,
+    &:focus > .link-icon {
+        fill: $third-text-color;
+    }
+
+    &:hover,
+    &:focus {
+        background-color: $link-color;
+    }
+}
+
+.social-links > li{
+    margin-right: 10px;
+
+    &:last-child{
+        margin-right: 0px;
+    }
+}
+
+.social-links .link-icon {
+    display: inline-block;
+    fill: $border-partners-company-color;
+    
+    transition: fill $transition;
+}
+
+
+  

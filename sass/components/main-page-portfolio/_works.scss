@@ -1,0 +1,104 @@
+.works{
+    padding-bottom: 94px;
+}
+
+.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    padding: 0;
+    margin: 0;
+
+    & img{
+        margin-bottom: 0px;
+        height: 294px;
+    }
+
+    &-image{
+        position: relative;
+        display: flex;    
+        overflow: hidden;
+    }
+
+    & .text{
+        position: absolute;
+        padding: 0px 24px;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        color: $third-text-color;
+        background-color: $bacgroung-portfolio-links;
+        width: 370px;
+        height: 294px;
+        font-size: 18px;
+        line-height: 1.56;
+    
+        transform: translate(0, +100%);
+        transition: transform $transition;
+    }
+
+    &-links{
+        width: calc((100% - 30px * 2) / 3);
+        margin-right: 30px;
+        margin-top: 30px;
+
+        &:nth-child(3n){
+            margin-right: 0px;
+        }
+        &:nth-child(-n + 3){
+            margin-top: 0px;
+        }
+    }
+}
+
+.portfolio-elements{
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+    overflow: hidden;
+
+    transition: box-shadow 250ms $transition;
+
+    &:hover,
+    &:focus{
+        box-shadow: 1px 4px 6px rgba(0, 0, 0, 0.16), 0px 4px 4px rgba(0, 0, 0, 0.06), 0px 1px 1px rgba(0, 0, 0, 0.12);
+    }
+
+    &:hover .text,
+    &:focus .text{
+        transform: translate(0, 0);
+    }
+}
+
+.portfolio-elements, .portfolio-elements > img{
+    display: block;
+    margin-right: 0px;
+} 
+
+.portfolio-card{     
+    border: 1px solid #EEEEEE;
+    border-top: transparent;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+    padding: 20px 24px;
+
+    & h2{
+        color: $primary-text-color;
+        font-weight: 700;
+        font-size: 18px;
+        line-height: 2;
+        letter-spacing: 0.06em;
+        text-align: left;
+        margin: 0;
+        padding: 0;
+    }
+
+    & .product{
+        color: $secondary-text-color;
+        font-size: 16px;
+        line-height: 1.86;
+        text-align: left;
+        margin-top: 4px;
+        margin-bottom: 0px;
+    }
+}
+

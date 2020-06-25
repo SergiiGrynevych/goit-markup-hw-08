@@ -1,0 +1,152 @@
+footer{
+    background-color: $backgroung-footer-color;
+    padding-bottom: 21px;
+}
+
+.container-footer{
+    margin-bottom: 0px;
+}
+
+.contacts{
+    & > ul{
+        padding: 0;
+        margin: 0;
+    }
+
+    & > p{
+        margin-bottom: 9px;
+    
+        color: $third-text-color;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+    }
+
+    & a{
+        display: block;
+        margin-top: 0px;
+    
+        color: $secondary-text-color;
+        font-size: 14px;
+        line-height: 1.71;
+        font-style: normal;
+    }
+    
+    & li:first-child{
+        margin-bottom: 9px;
+    }
+}
+
+.footer{
+    &-logo{
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    &-flex{
+        display: flex;
+        align-items: baseline;
+
+        &-block{
+            margin-top: 60px;
+            margin-bottom: 60px;
+        }
+    }      
+}
+
+.footer-links{
+    margin-top: 21px;
+    fill: $third-text-color;
+
+    & .link{
+        background-color: $line-developers-color;
+
+        &-icon{
+            fill: $third-text-color;
+        }
+    }
+}
+
+.join{
+    margin-bottom: 0px;
+
+    color: $third-text-color;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.subscribe{
+    margin-top: 57px;
+    margin-left: 94px;
+
+    &-urge{
+        color: $third-text-color;
+        font-size: 14px;
+        line-height: 1.14;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+}
+
+.subscribe-form{
+    display: flex;
+    padding: 0;
+    margin-top: 20px;
+
+    &__field-input{
+        padding-left: 12px;
+        width: 358px;
+        height: 50px;
+    
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 16px;
+        line-height: 1.87;
+    
+        background-color: transparent;
+        border: 1px solid rgba(255, 255, 255, 0.3);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+    }
+}
+
+.developers{
+    color: $developers-color;
+    font-size: 12px;
+    line-height: 2;
+    text-align: center;
+    margin-top: 18px;
+    margin-bottom: 0;
+    padding-top: 18px;
+    border-top: 1px solid $line-developers-color;
+}
+
+.submit{
+    display: flex;
+    align-items: center;
+    padding-left: 29px;
+    margin-left: 12px;
+    width: 200px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 1.87;
+    letter-spacing: 0.06em;
+    color: $third-text-color;
+    background-color: $link-color;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+
+    &-svg{
+        margin-left: 10px;
+        width: 24px;
+        height: 24px;
+    }
+}
+
+.network{
+    margin-left: 69px;
+}

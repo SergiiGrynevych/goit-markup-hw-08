@@ -1,0 +1,44 @@
+.employment-partners{
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+.partners{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+
+    &-image{
+        display: flex;
+    }
+    
+    &-logo{
+        display: block;
+        fill: $border-partners-company-color;
+    
+        transition: fill $transition;
+    }
+}
+
+.partners-link{
+    display: flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $border-partners-company-color;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+
+    transition: border $transition;
+    
+        &:hover,
+        &:focus{
+            border: 1px solid $link-color;
+        }
+
+        &:hover > .partners-logo,
+        &:focus > .partners-logo{
+            fill: $link-color;
+        }
+}

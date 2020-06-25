@@ -1,0 +1,82 @@
+.form-mailing{
+    margin-top: 20px;
+    &__label{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        /* outline: 1px solid black; */
+        
+        &-link{
+            color: $link-color;
+            text-decoration-line: underline;
+        }
+
+        &-confirm{
+            margin: 0;
+            padding: 0;
+            font-size: 14px;
+            line-height: 1.71;
+            color: $secondary-text-color;
+        }
+    }
+}
+
+.form-list__item-image{
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    top: 50%;
+    left: 16px;
+    transform: translateY(-50%);
+    /* margin: 14px 0px 14px 19px; */
+}
+
+.checkbox{
+
+    // -webkit-appearance: none;
+    // -moz-appearance: none;
+    // appearance: none;
+    margin-right: 9px;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+
+    &-icon{
+        display: block;
+        margin-right: 8px;
+        width: 15px;
+        height: 15px;
+        border: 2px solid $primary-text-color;
+        border-radius: 4px;
+        transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    }
+    &:checked+&-icon{
+        background-color: $link-color;
+        background-image: url(../images/icon-check.svg);
+        background-size: contain;
+        background-origin: border-box;
+        border-color: $link-color;
+    }
+}
+
+.button-send{
+    display: inline-block;
+    margin-top: 30px;
+    
+    width: 200px;
+    height: 50px;
+
+    font-size: 16px;
+    line-height: 1.87;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+
+    color: $third-text-color;
+    background: $link-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+    cursor: pointer;
+}

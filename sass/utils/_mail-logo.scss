@@ -1,0 +1,21 @@
+.nav-logo{
+    margin-right: 85px;
+}
+
+span{
+    &.first-name, &.last-name{
+        color: $link-color;
+        font-family: $main-logo-font;
+        font-weight: 700;
+        font-size: 26px;
+        line-height: 1.18;
+    }
+
+    &.last-name{
+        color: $primary-text-color;
+
+        &.footer{
+            color: $third-text-color;
+        }
+    }
+}
