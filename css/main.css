@@ -753,9 +753,21 @@ textarea, input {
   /* margin-bottom: 94px; */
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (max-width: 479px) {
   .employment-section {
     display: none;
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .employment-section {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1170px) {
+  .employment-section {
+    display: block;
   }
 }
 
@@ -835,6 +847,20 @@ textarea, input {
 .employment-team {
   padding-top: 94px;
   padding-bottom: 94px;
+}
+
+@media screen and (min-width: 480px) {
+  .employment-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .employment-team {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .team-flex-item {
