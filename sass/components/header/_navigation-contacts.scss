@@ -1,27 +1,62 @@
 .nav-contacts{
-    display: flex;    
-    padding: 0;
     margin: 0;
-    margin-left: auto;
+    padding: 0;
     align-items: center;
 
     color: inherit;  
     font-weight: 500;
-    font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
 
-    & .item + .item{
-        display: flex;
-        margin-left: 30px;
-        align-items: center;
+    @media screen and (max-width: 767px) {
+        font-size: 18px;
     }
+
+    @media screen and (min-width: 768px) {
+        display: flex;  
+        padding: 0;
+        margin: 0;
+        font-size: 12px;
+        line-height: 1.17;
+        align-self: center;
+        // text-align: left;
+    }
+
+    @media screen and (max-width: 1169px) {
+        display: inline-block;
+        flex-direction: column;
+
+    }
+
+        & .item{
+            @media screen and (max-width: 767px) {
+                margin-bottom: 40px;
+            }
+
+            &:first-child {
+                @media screen and (min-width: 767px) and (max-width: 1169px){
+                    margin-bottom: 10px;
+                }
+            }
+        }
+
+        & .item + .item{
+            @media screen and (min-width: 1170px) {
+                display: flex;
+                margin-left: 30px;
+                align-items: center;
+            }
+        }
 
     & .item-link{
         display: flex;
         align-items: center;
         color: $secondary-text-color;
         transition: color $transition;
+
+        @media screen and (max-width: 767px){
+            display: inline-flex;
+        }
     }
 }
 
