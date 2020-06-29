@@ -1,17 +1,41 @@
 .works{
-    padding-bottom: 94px;
+    @media screen and (max-width: 1169px){
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1170px) {
+        padding-bottom: 94px;
+    }
 }
 
 .portfolio{
-    display: flex;
-    flex-wrap: wrap;
-    /* justify-content: space-between; */
     padding: 0;
     margin: 0;
 
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     & img{
         margin-bottom: 0px;
-        height: 294px;
+
+        @media screen and (min-width: 480px) {
+            width: 450px;
+            height: 294px;
+        }
+
+        @media screen and (min-width: 768px) {
+            width: 294px;
+        }
+
+        @media screen and (max-width: 1169px){
+            height: 404px;
+        }
+
+        @media screen and (min-width: 1170px) {
+            width: 370px;
+        }
     }
 
     &-image{
@@ -38,16 +62,26 @@
     }
 
     &-links{
-        width: calc((100% - 30px * 2) / 3);
-        margin-right: 30px;
-        margin-top: 30px;
+        @media screen and (min-width: 768px) {
+            width: calc((100% - 30px * 1) / 2)
+            
+        }
 
-        &:nth-child(3n){
-            margin-right: 0px;
+        @media screen and (min-width: 1170px) {
+            width: calc((100% - 30px * 2) / 3);
+            margin-right: 30px;
+            margin-top: 30px;
+            
+            &:nth-child(3n){
+                margin-right: 0px;
+            }
+            &:nth-child(-n + 3){
+                margin-top: 0px;
+            }
+
         }
-        &:nth-child(-n + 3){
-            margin-top: 0px;
-        }
+
+       
     }
 }
 
