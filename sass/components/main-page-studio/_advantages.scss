@@ -114,7 +114,7 @@
         margin-right: 0px;
 
         & > .advantages-description{
-            @media screen and (min-width: 480px){
+            @media screen and (max-width: 767px){
                 margin-bottom: 0px;
             }
         }
