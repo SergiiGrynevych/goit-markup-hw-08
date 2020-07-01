@@ -85,15 +85,14 @@ footer{
 }
 
 .footer-links{
+    margin: 0;
+    margin-left: auto;
+    margin-right: auto;
     fill: $third-text-color;
 
     @media screen and (max-width: 767px) {
         // padding: 0;
         // margin: 0;
-    }
-
-    @media screen and (min-width: 1170px) {
-        margin-top: 21px;
     }
 
     & .link{
@@ -106,7 +105,7 @@ footer{
 }
 
 .join{
-    margin-bottom: 0px;
+    margin-bottom: 20px;
 
     color: $third-text-color;
     font-weight: 700;

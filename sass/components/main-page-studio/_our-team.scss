@@ -97,7 +97,13 @@
     width: 206px;
     height: 44px;
     padding: 0;
-    margin-bottom: 24px;
+    // margin-bottom: 24px;
+
+    .team-flex-item > &{
+        @media screen and (max-width: 1169px) {
+            margin-bottom: 24px;
+        }
+    }
 }
   
 .social-links .link {

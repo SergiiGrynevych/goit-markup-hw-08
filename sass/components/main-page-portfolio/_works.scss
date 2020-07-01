@@ -20,22 +20,22 @@
     & img{
         margin-bottom: 0px;
 
-        @media screen and (min-width: 480px) {
-            width: 450px;
-            height: 294px;
-        }
+        // @media screen and (min-width: 480px) {
+        //     width: 450px;
+        //     height: 294px;
+        // }
 
-        @media screen and (min-width: 768px) {
-            width: 294px;
-        }
+        // @media screen and (min-width: 768px) {
+        //     width: 294px;
+        // }
 
-        @media screen and (max-width: 1169px){
-            height: 404px;
-        }
+        // @media screen and (max-width: 1169px){
+        //     height: 404px;
+        // }
 
-        @media screen and (min-width: 1170px) {
-            width: 370px;
-        }
+        // @media screen and (min-width: 1170px) {
+        //     width: 370px;
+        // }
     }
 
     &-image{
@@ -46,19 +46,28 @@
 
     & .text{
         position: absolute;
-        padding: 0px 24px;
+        top: 0;
+        left: 0;
         margin: 0;
+        width: 100%;
+        height: 100%;
+        padding: 0px 24px;
+
         display: flex;
         align-items: center;
         color: $third-text-color;
         background-color: $bacgroung-portfolio-links;
-        width: 370px;
-        height: 294px;
+        
         font-size: 18px;
         line-height: 1.56;
     
         transform: translate(0, +100%);
         transition: transform $transition;
+
+        @media screen and (min-width: 1170px) {
+            width: 370px;
+            height: 294px;
+        }
     }
 
     &-links{
@@ -67,10 +76,11 @@
             &:last-child{
                 margin-bottom: 0px;
             }
+
         }
 
         @media screen and (min-width: 768px) and (max-width: 1169px) {
-            width: calc((100% - 30px * 1) / 2);
+            width: calc((100% - 30px) / 2);
             margin-right: 30px;
             margin-bottom: 30px;
             &:nth-child(even){
