@@ -1456,6 +1456,7 @@ textarea, input {
 
 .portfolio img {
   margin-bottom: 0px;
+  width: 100%;
 }
 
 .portfolio-image {
